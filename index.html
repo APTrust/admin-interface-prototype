@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset=utf-8">
+    <title>AP Trust Admin</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <header role="banner">
+        <hgroup>
+        <h1>AP Trust</h1>
+        <h2>University of Virginia</h2>
+        </hgroup>
+        <div id="courtesy">
+            <p>Welcome, Thomas Jefferson! <a href="#">Sign Out</a></p>
+        <form action="" method="get" accept-charset="utf-8">
+            <input type="search" name="search" id="search" placeholder="lorem ipsum" value="">
+            <input type="submit" name="submit" id="submit" value="Search">
+        </form>
+        </div>
+    </header>
+    <nav id="primary-nav" role="navigation">
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="discovery.html">Discovery</a></li>
+        </ul>
+    </nav>
+    <div role="main">
+        <section id="institutional-activity">
+            <h1>Institutional Activity</h1>
+            <p>The University of Virginia has <strong>44 packages</strong> containing <strong>1,200 objects</strong>, using <strong>300GB of storage</strong>.</p>
+            <ul>
+                <li><a href="discovery.html">22 packages</a> are <strong>DPN Bound</strong></li>
+                <li><a href="discovery.html">20 packages</a> are <strong>Public</strong></li>
+                <li><a href="discovery.html">12 packages</a> are <strong>Private</strong></li>
+                <li><a href="discovery.html">12 packages</a> are <strong>Institution Only</strong></li>
+                <li><a href="discovery.html">2 packages</a> have <strong>Failed Health Checks</strong></li>
+            </ul>
+            <p><a href="discovery.html">Browse University of Virginia Packages</a></p>
+
+            <h2>Monthly Activity</h2>
+            <div id="chart"></div>
+        </section>
+
+        <section id="recent-ingests">
+            <h1>Recent Ingests</h1>
+            <ul class="ingests">
+                <li class="ingest in-progress">
+                    <h2>Lorem Ipsum</h2>
+                    <p class="info">Started <strong class="date date-started">Today 8:45AM</strong> by <strong class="user">Thomas Jefferson</strong></p>
+                    <p class="progress"><progress max="100" value="60"></progress> <strong>60% done</strong></p>
+                </li>
+                <li class="ingest in-progress">
+                    <h2>Lorem Ipsum</h2>
+                    <p class="info">Started <strong class="date date-started">Today 8:45AM</strong> by <strong class="user">Thomas Jefferson</strong>
+                    <p class="progress"><progress max="100" value="60"></progress> <strong>60% done</strong></p>
+
+                </li>
+                <li class="ingest in-progress">
+                    <h2>Lorem Ipsum</h2>
+                    <p class="info">Started <strong class="date date-started">Today 8:45AM</strong> by <strong class="user">Thomas Jefferson</strong>
+                    <p class="progress"><progress max="100" value="60"></progress> <strong>60% done</strong></p>
+                </li>
+                <li class="ingest completed">
+                    <h2>Lorem Ipsum</h2>
+                    <p class="info">Started <strong class="date date-started">Today 8:45AM</strong> by <strong class="user">Thomas Jefferson</strong>
+                    <p class="progress"><progress max="100" value="100"></progress> <strong> 4/4 packages ingested successfully</strong></p>
+
+                </li>
+                <li class="ingest failed">
+                    <h2>Lorem Ipsum</h2>
+                    <p class="info">Started <strong class="date date-started">Today 8:45AM</strong> by <strong class="user">Thomas Jefferson</strong>
+                    <p class="progress"><progress max="100" value="00"></progress> <strong>1/4 packages failed</strong></p>
+                </li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

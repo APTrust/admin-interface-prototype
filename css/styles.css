@@ -73,11 +73,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   body {
     *zoom: 1;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 0;
     padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
     font-family: Helvetica, sans-serif;
     color: #333;
   }
@@ -95,7 +94,35 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   h2 {
     font-size: 1.5em;
     line-height: 1.16667em;
+    margin-bottom: 1.75em;
     font-weight: bold;
+  }
+
+  h3 {
+    font-size: 1.25em;
+    line-height: 1.4em;
+    font-weight: bold;
+    color: #999;
+  }
+
+  table {
+    width: 100%;
+    font-size: 0.875em;
+    line-height: 2em;
+    margin-bottom: 1.75em;
+  }
+  table tr {
+    border-bottom: 1px dotted #cccccc;
+  }
+  table thead tr {
+    border-bottom: 2px solid #999999;
+  }
+  table th {
+    font-weight: bold;
+  }
+  table th, table td {
+    vertical-align: top;
+    padding: 0.4375em 0;
   }
 
   ul {
@@ -105,6 +132,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   p, ul, ol, dl {
     margin-bottom: 1.75em;
+  }
+
+  a:link {
+    color: #39f;
+  }
+  a:visited {
+    color: #38c;
+  }
+  a:hover {
+    color: #36f;
+  }
+  a:focus {
+    color: #36f;
+  }
+  a:active {
+    color: #555;
+  }
+
+  .kicker {
+    color: #999;
+    font-size: 0.75em;
+    line-height: 2.33333em;
+    display: block;
+    font-weight: bold;
   }
 
   header[role="banner"] {
@@ -171,6 +222,72 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     padding-left: 8.69565%;
     padding-right: 8.69565%;
   }
+  div[role="main"] h1 {
+    margin-bottom: 0.875em;
+  }
+  div[role="main"] #facets,
+  div[role="main"] #package {
+    width: 26.31579%;
+    float: left;
+    margin-right: 5.26316%;
+    display: inline;
+  }
+  div[role="main"] #package .dates {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 0.75em;
+    line-height: 2.33333em;
+    color: #999;
+    border-top: 1px dotted #cccccc;
+  }
+  div[role="main"] #package .dates li {
+    border-bottom: 1px dotted #cccccc;
+    padding: 0.4375em 0;
+  }
+  div[role="main"] #package input[type=text],
+  div[role="main"] #package select {
+    width: 100%;
+    border: 1px solid #999999;
+    padding: 5px;
+  }
+  div[role="main"] #results,
+  div[role="main"] #object {
+    width: 68.42105%;
+    float: right;
+    margin-right: 0;
+    #margin-left: -4em;
+    display: inline;
+  }
+  div[role="main"] #results .result,
+  div[role="main"] #object .result {
+    border: 1px solid #dddddd;
+    padding: 20px;
+    margin-bottom: 1.75em;
+  }
+  div[role="main"] #results .result .health-check,
+  div[role="main"] #object .result .health-check {
+    margin: 0 -20px -20px;
+    padding: 10px 20px;
+    border: 1px solid white;
+    font-size: 0.75em;
+    line-height: 2.33333em;
+    font-weight: bold;
+  }
+  div[role="main"] #results .result .meta,
+  div[role="main"] #object .result .meta {
+    font-size: 0.75em;
+    line-height: 2.33333em;
+    color: #999;
+  }
+  div[role="main"] #results .result .good,
+  div[role="main"] #object .result .good {
+    background-color: rgba(0, 255, 0, 0.25);
+  }
+  div[role="main"] #results .result .bad,
+  div[role="main"] #object .result .bad {
+    background-color: rgba(255, 0, 0, 0.25);
+  }
 
   section {
     width: 47.36842%;
@@ -211,6 +328,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .ingests li h2 {
     font-size: 1.125em;
     line-height: 1.55556em;
+    margin: 0;
   }
   .ingests li + li {
     border-top: 1px dotted rgba(0, 0, 0, 0.25);
